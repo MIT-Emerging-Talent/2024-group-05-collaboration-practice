@@ -2,9 +2,7 @@
 #Given two strings of numbers, add the numbers together and return the result as a string.
 #Example:
 #Input: "123", "456"
-#Output: "579"
-#Input: "123", "456"
-#Output: "579"
+
 
 def add_string_numbers(num1, num2):
     # Fill this in.
