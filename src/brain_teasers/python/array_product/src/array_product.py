@@ -1,18 +1,17 @@
-# Product of two arrays
-# Given two arrays of integers, return an array of the products of the two arrays.
+# Simple solution to the array product problem
 
+def array_product(my_array):
+    if len(my_array) == 0:
+        return []
+    if len(my_array) == 1:
+        return my_array
+    result = []
+    for i in range(len(my_array)):
+        product = 1
+        for j in range(len(my_array)):
+            if i != j:
+                product *= my_array[j]
+        result.append(product)
+    return result
 
-def array_product(arr1, arr2):
-    
-    arr3 = []
-    for i in range(len(arr1)):
-        arr3.append(arr1[i] * arr2[i])
-    return arr3
-
-if __name__ == "__main__":
-    print(array_product([1, 2, 3], [4, 5, 6]))
-    # [30, 24, 20]
-    print(array_product([1, 2, 3], [4, 5, 6]))
-    # [30, 24, 20]
-    print(array_product([1, 2, 3], [4, 5, 6]))
-    # [30, 24, 20]
+print(array_product([1, 2, 3, 4, 5]))
