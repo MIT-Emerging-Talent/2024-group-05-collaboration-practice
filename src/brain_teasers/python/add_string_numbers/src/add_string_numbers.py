@@ -1,4 +1,6 @@
 #Add string numbers
+''' designed to add two numbers represented as strings. The tests cover scenarios such as adding single and double-digit integers,
+large numbers, floating-point numbers, and combinations of these cases'''
 #Given two strings of numbers, add the numbers together and return the result as a string.
 #Example:
 #Input: "123", "456"
